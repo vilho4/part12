@@ -1,0 +1,42 @@
+Script started on 2025-10-13 18:53:52+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="23"]
+[?2004h]0;ville@Ville-thinkpad: ~/Documents/part12/script-answers[01;32mville@Ville-thinkpad[00m:[01;34m~/Documents/part12/script-answers[00m$ docker run hello-world
+[?2004l
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h]0;ville@Ville-thinkpad: ~/Documents/part12/script-answers[01;32mville@Ville-thinkpad[00m:[01;34m~/Documents/part12/script-answers[00m$ o[Kdocker run -it ubuntu ba sh
+[?2004lUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K4b3ffd8ccb52: Pulling fs layer [1B[1A[2K4b3ffd8ccb52: Downloading  303.1kB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  3.047MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  7.008MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  9.454MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  13.11MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  15.27MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  16.79MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading   17.4MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  18.33MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  19.87MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  22.63MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  25.08MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading   26.6MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Downloading  28.75MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Download complete [1B[1A[2K4b3ffd8ccb52: Extracting  327.7kB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  5.571MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  8.847MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  14.42MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  21.63MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  25.56MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  28.18MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  29.49MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Extracting  29.72MB/29.72MB[1B[1A[2K4b3ffd8ccb52: Pull complete [1BDigest: sha256:66460d557b25769b102175144d538d88219c077c678a49af4afca6fbfc1b5252
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@31c6ea90eab6: /root@31c6ea90eab6:/# [7mmkdir -p /usr/src/app[27m
+[Aroot@31c6ea90eab6:/# mkdir -p /usr/src/app
+[K[Aroot@31c6ea90eab6:/# mkdir -p /usr/src/app
+[?2004l[?2004h]0;root@31c6ea90eab6: /root@31c6ea90eab6:/# [7mecho 'console.log("Hello from container!");' > /usr/src/app[27m[7m/[27m[7m/index.js[27m
+[A[Aroot@31c6ea90eab6:/# echo 'console.log("Hello from container!");' > /usr/src/app/index.js
+[K[A/index.js
+[?2004l[?2004h]0;root@31c6ea90eab6: /root@31c6ea90eab6:/# [Kexit
+[?2004lexit
+[?2004h]0;ville@Ville-thinkpad: ~/Documents/part12/script-answers[01;32mville@Ville-thinkpad[00m:[01;34m~/Documents/part12/script-answers[00m$ e[Kexit
+[?2004lexit
+
+Script done on 2025-10-13 18:57:27+03:00 [COMMAND_EXIT_CODE="0"]
