@@ -4,6 +4,12 @@ services:
     ports:
       - 3456:27017
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-      MONGO_INITDB_DATABASE: the_database
+      MONGO_INITDB_ROOT_USERNAME: teppo
+      MONGO_INITDB_ROOT_PASSWORD: salainen
+      MONGO_INITDB_DATABASE: todo_db
+    volumes:
+      - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
