@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -16,6 +17,7 @@
     "redis": "^3.1.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prettier": "^3.6.2"
   }
 }

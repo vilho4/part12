@@ -1,0 +1,2 @@
+### Todo By Id
+GET http://localhost:3000/todos/68fcc7b1504e29c6f6ce5f47
