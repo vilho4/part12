@@ -3,6 +3,6 @@ POST http://localhost:3000/todos
 Content-Type: application/json
 
 {
-  "text": "When coding, you most likely end up in a situation where everything is broken.",
+  "text": "12.11 completed with deleting todos and creating new",
   "done": true
 }
