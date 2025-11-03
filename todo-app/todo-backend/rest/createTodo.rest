@@ -3,6 +3,6 @@ POST http://localhost:3000/todos
 Content-Type: application/json
 
 {
-  "text": "12.11 completed with deleting todos and creating new",
+  "text": "laskuri 1",
   "done": true
 }
