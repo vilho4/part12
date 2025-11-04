@@ -1,0 +1,16 @@
+services:
+  app:
+    image: todo-front-dev
+    build:
+      context: . # The context will pick this directory as the "build context"
+      dockerfile: dev.Dockerfile # This will simply tell which dockerfile to read
+    volumes:
+      - ./:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
+    ports:
+      - 5173:5173
+    container_name: todo-front-dev # This will name the container todo-front-dev
+    environment:
+      - REDIS_URL=redis://localhost:6379
+      - MONGO_URL=mongodb://teppo:salainen@localhost:3456/todo_db
+  debug-helper:
+    image: busybox
