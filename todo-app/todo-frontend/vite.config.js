@@ -9,4 +9,8 @@ export default defineConfig({
     globals: true,
     setupFiles: './testSetup.js',
   },
+  server: {
+    host: '0.0.0.0',
+    allowedHosts: ['frontend', 'localhost']
+  },
 })
