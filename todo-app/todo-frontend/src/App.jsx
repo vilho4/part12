@@ -2,7 +2,7 @@ import './App.css'
 import TodoView from './Todos/TodoView'
 
 function App() {
-  console.log('hot-loaded3')
+  // console.log('hot-loaded4')
   return (
     <div className="App">
       <TodoView />
