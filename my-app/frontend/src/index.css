@@ -1,0 +1,46 @@
+
+h1 {
+    color: green;
+    font-family: 'Verdana', sans-serif;
+    text-align: left;
+  }
+  h2 {
+    color: green;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+  h3 {
+    color:black;
+    font-family: 'Helvetica', sans-serif;
+    text-align: left;
+  }
+  .persoonat {
+    color: grey;
+    padding-top: 3px;
+    font-size: 2vh;
+    font-family: 'Times New Roman', serif;
+  }
+  body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error {
+    color: red;
+    background: #f8d7da;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .success {
+    color: green;
+    background: #d4edda;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
