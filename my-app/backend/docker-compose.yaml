@@ -1,0 +1,13 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: phonebook-back-prod
+    container_name: phonebook-back-prod
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3001:3001
+    env_file:
+      - .env

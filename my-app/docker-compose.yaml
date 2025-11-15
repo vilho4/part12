@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  backend:
+    image: phonebook-back-prod
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: phonebook-back-prod
+    env_file:
+      - ./backend/.env
+    # ports:
+    #   - "3001:3001"
+
+  frontend:
+    image: phonebook-front-prod
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: phonebook-front-prod
+    env_file:
+      - ./frontend/.env
+    # ports:
+    #   - "8080:80"
+    depends_on:
+      - backend
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy
+    depends_on:
+      - frontend # wait for the frontend container to be started
+      - backend # wait for the backend container to be started

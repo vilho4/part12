@@ -1,0 +1,35 @@
+services:
+  backend:
+    image: phonebook-back-dev
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+    container_name: phonebook-back-dev
+    env_file:
+      - ./backend/.env
+    ports:
+      - 3001:3001
+
+  frontend:
+    image: phonebook-front-dev
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    container_name: phonebook-front-dev
+    env_file:
+      - ./frontend/.env
+    # ports:
+    #   - 8080:80  ngix hoitaa portit
+    depends_on:
+      - backend
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    # ports
+    #   - 8080:80 ngix hoitaa portit
+    container_name: reverse-proxy
+    depends_on:
+      - frontend # wait for the frontend container to be started
+      - backend # wait for the backend container to be started
