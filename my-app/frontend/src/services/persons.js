@@ -7,11 +7,9 @@ const baseUrl = import.meta.env.VITE_BACKEND_URL
 // }
 
 const getAll = () => {
-  console.log("Calling GET:", baseUrl)
   const request = axios.get(baseUrl)
   return request
     .then(response => {
-      console.log("Response data:", response.data)
       return response.data
     })
     .catch(error => {
